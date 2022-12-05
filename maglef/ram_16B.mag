@@ -1,0 +1,143 @@
+magic
+tech gf180mcuC
+magscale 1 5
+timestamp 1670244896
+<< obsm1 >>
+rect 672 1538 49280 48313
+<< metal2 >>
+rect 3192 49600 3248 50000
+rect 9408 49600 9464 50000
+rect 15624 49600 15680 50000
+rect 21840 49600 21896 50000
+rect 28056 49600 28112 50000
+rect 34272 49600 34328 50000
+rect 40488 49600 40544 50000
+rect 46704 49600 46760 50000
+rect 3192 0 3248 400
+rect 9408 0 9464 400
+rect 15624 0 15680 400
+rect 21840 0 21896 400
+rect 28056 0 28112 400
+rect 34272 0 34328 400
+rect 40488 0 40544 400
+rect 46704 0 46760 400
+<< obsm2 >>
+rect 854 49570 3162 49600
+rect 3278 49570 9378 49600
+rect 9494 49570 15594 49600
+rect 15710 49570 21810 49600
+rect 21926 49570 28026 49600
+rect 28142 49570 34242 49600
+rect 34358 49570 40458 49600
+rect 40574 49570 46674 49600
+rect 46790 49570 49154 49600
+rect 854 430 49154 49570
+rect 854 400 3162 430
+rect 3278 400 9378 430
+rect 9494 400 15594 430
+rect 15710 400 21810 430
+rect 21926 400 28026 430
+rect 28142 400 34242 430
+rect 34358 400 40458 430
+rect 40574 400 46674 430
+rect 46790 400 49154 430
+<< metal3 >>
+rect 0 43680 400 43736
+rect 49600 37464 50000 37520
+rect 0 31192 400 31248
+rect 0 18704 400 18760
+rect 49600 12488 50000 12544
+rect 0 6216 400 6272
+<< obsm3 >>
+rect 400 43766 49600 48230
+rect 430 43650 49600 43766
+rect 400 37550 49600 43650
+rect 400 37434 49570 37550
+rect 400 31278 49600 37434
+rect 430 31162 49600 31278
+rect 400 18790 49600 31162
+rect 430 18674 49600 18790
+rect 400 12574 49600 18674
+rect 400 12458 49570 12574
+rect 400 6302 49600 12458
+rect 430 6186 49600 6302
+rect 400 1358 49600 6186
+<< metal4 >>
+rect 2224 1538 2384 48246
+rect 9904 1538 10064 48246
+rect 17584 1538 17744 48246
+rect 25264 1538 25424 48246
+rect 32944 1538 33104 48246
+rect 40624 1538 40784 48246
+rect 48304 1538 48464 48246
+<< obsm4 >>
+rect 35350 23529 40594 37903
+rect 40814 23529 47138 37903
+<< labels >>
+rlabel metal3 s 0 6216 400 6272 6 address[0]
+port 1 nsew signal input
+rlabel metal3 s 0 18704 400 18760 6 address[1]
+port 2 nsew signal input
+rlabel metal3 s 0 31192 400 31248 6 address[2]
+port 3 nsew signal input
+rlabel metal3 s 0 43680 400 43736 6 address[3]
+port 4 nsew signal input
+rlabel metal3 s 49600 37464 50000 37520 6 clk
+port 5 nsew signal input
+rlabel metal2 s 3192 0 3248 400 6 data_in[0]
+port 6 nsew signal input
+rlabel metal2 s 9408 0 9464 400 6 data_in[1]
+port 7 nsew signal input
+rlabel metal2 s 15624 0 15680 400 6 data_in[2]
+port 8 nsew signal input
+rlabel metal2 s 21840 0 21896 400 6 data_in[3]
+port 9 nsew signal input
+rlabel metal2 s 28056 0 28112 400 6 data_in[4]
+port 10 nsew signal input
+rlabel metal2 s 34272 0 34328 400 6 data_in[5]
+port 11 nsew signal input
+rlabel metal2 s 40488 0 40544 400 6 data_in[6]
+port 12 nsew signal input
+rlabel metal2 s 46704 0 46760 400 6 data_in[7]
+port 13 nsew signal input
+rlabel metal2 s 3192 49600 3248 50000 6 data_out[0]
+port 14 nsew signal output
+rlabel metal2 s 9408 49600 9464 50000 6 data_out[1]
+port 15 nsew signal output
+rlabel metal2 s 15624 49600 15680 50000 6 data_out[2]
+port 16 nsew signal output
+rlabel metal2 s 21840 49600 21896 50000 6 data_out[3]
+port 17 nsew signal output
+rlabel metal2 s 28056 49600 28112 50000 6 data_out[4]
+port 18 nsew signal output
+rlabel metal2 s 34272 49600 34328 50000 6 data_out[5]
+port 19 nsew signal output
+rlabel metal2 s 40488 49600 40544 50000 6 data_out[6]
+port 20 nsew signal output
+rlabel metal2 s 46704 49600 46760 50000 6 data_out[7]
+port 21 nsew signal output
+rlabel metal3 s 49600 12488 50000 12544 6 rd_wr
+port 22 nsew signal input
+rlabel metal4 s 2224 1538 2384 48246 6 vdd
+port 23 nsew power bidirectional
+rlabel metal4 s 17584 1538 17744 48246 6 vdd
+port 23 nsew power bidirectional
+rlabel metal4 s 32944 1538 33104 48246 6 vdd
+port 23 nsew power bidirectional
+rlabel metal4 s 48304 1538 48464 48246 6 vdd
+port 23 nsew power bidirectional
+rlabel metal4 s 9904 1538 10064 48246 6 vss
+port 24 nsew ground bidirectional
+rlabel metal4 s 25264 1538 25424 48246 6 vss
+port 24 nsew ground bidirectional
+rlabel metal4 s 40624 1538 40784 48246 6 vss
+port 24 nsew ground bidirectional
+<< properties >>
+string FIXED_BBOX 0 0 50000 50000
+string LEFclass BLOCK
+string LEFview TRUE
+string GDS_END 2965402
+string GDS_FILE /home/vrushabh/RAM/openlane/ram_16B/runs/22_12_05_18_22/results/signoff/ram_16B.magic.gds
+string GDS_START 159264
+<< end >>
+

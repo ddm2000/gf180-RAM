@@ -1,0 +1,265 @@
+VERSION 5.7 ;
+  NOWIREEXTENSIONATPIN ON ;
+  DIVIDERCHAR "/" ;
+  BUSBITCHARS "[]" ;
+MACRO ram_16B
+  CLASS BLOCK ;
+  FOREIGN ram_16B ;
+  ORIGIN 0.000 0.000 ;
+  SIZE 500.000 BY 500.000 ;
+  PIN address[0]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal3 ;
+        RECT 0.000 62.160 4.000 62.720 ;
+    END
+  END address[0]
+  PIN address[1]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal3 ;
+        RECT 0.000 187.040 4.000 187.600 ;
+    END
+  END address[1]
+  PIN address[2]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal3 ;
+        RECT 0.000 311.920 4.000 312.480 ;
+    END
+  END address[2]
+  PIN address[3]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal3 ;
+        RECT 0.000 436.800 4.000 437.360 ;
+    END
+  END address[3]
+  PIN clk
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal3 ;
+        RECT 496.000 374.640 500.000 375.200 ;
+    END
+  END clk
+  PIN data_in[0]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 31.920 0.000 32.480 4.000 ;
+    END
+  END data_in[0]
+  PIN data_in[1]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 94.080 0.000 94.640 4.000 ;
+    END
+  END data_in[1]
+  PIN data_in[2]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 156.240 0.000 156.800 4.000 ;
+    END
+  END data_in[2]
+  PIN data_in[3]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 218.400 0.000 218.960 4.000 ;
+    END
+  END data_in[3]
+  PIN data_in[4]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 280.560 0.000 281.120 4.000 ;
+    END
+  END data_in[4]
+  PIN data_in[5]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 342.720 0.000 343.280 4.000 ;
+    END
+  END data_in[5]
+  PIN data_in[6]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 404.880 0.000 405.440 4.000 ;
+    END
+  END data_in[6]
+  PIN data_in[7]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 467.040 0.000 467.600 4.000 ;
+    END
+  END data_in[7]
+  PIN data_out[0]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 31.920 496.000 32.480 500.000 ;
+    END
+  END data_out[0]
+  PIN data_out[1]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 94.080 496.000 94.640 500.000 ;
+    END
+  END data_out[1]
+  PIN data_out[2]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 156.240 496.000 156.800 500.000 ;
+    END
+  END data_out[2]
+  PIN data_out[3]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 218.400 496.000 218.960 500.000 ;
+    END
+  END data_out[3]
+  PIN data_out[4]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 280.560 496.000 281.120 500.000 ;
+    END
+  END data_out[4]
+  PIN data_out[5]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 342.720 496.000 343.280 500.000 ;
+    END
+  END data_out[5]
+  PIN data_out[6]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 404.880 496.000 405.440 500.000 ;
+    END
+  END data_out[6]
+  PIN data_out[7]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 467.040 496.000 467.600 500.000 ;
+    END
+  END data_out[7]
+  PIN rd_wr
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal3 ;
+        RECT 496.000 124.880 500.000 125.440 ;
+    END
+  END rd_wr
+  PIN vdd
+    DIRECTION INOUT ;
+    USE POWER ;
+    PORT
+      LAYER Metal4 ;
+        RECT 22.240 15.380 23.840 482.460 ;
+    END
+    PORT
+      LAYER Metal4 ;
+        RECT 175.840 15.380 177.440 482.460 ;
+    END
+    PORT
+      LAYER Metal4 ;
+        RECT 329.440 15.380 331.040 482.460 ;
+    END
+    PORT
+      LAYER Metal4 ;
+        RECT 483.040 15.380 484.640 482.460 ;
+    END
+  END vdd
+  PIN vss
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER Metal4 ;
+        RECT 99.040 15.380 100.640 482.460 ;
+    END
+    PORT
+      LAYER Metal4 ;
+        RECT 252.640 15.380 254.240 482.460 ;
+    END
+    PORT
+      LAYER Metal4 ;
+        RECT 406.240 15.380 407.840 482.460 ;
+    END
+  END vss
+  OBS
+      LAYER Metal1 ;
+        RECT 6.720 15.380 492.800 483.130 ;
+      LAYER Metal2 ;
+        RECT 8.540 495.700 31.620 496.000 ;
+        RECT 32.780 495.700 93.780 496.000 ;
+        RECT 94.940 495.700 155.940 496.000 ;
+        RECT 157.100 495.700 218.100 496.000 ;
+        RECT 219.260 495.700 280.260 496.000 ;
+        RECT 281.420 495.700 342.420 496.000 ;
+        RECT 343.580 495.700 404.580 496.000 ;
+        RECT 405.740 495.700 466.740 496.000 ;
+        RECT 467.900 495.700 491.540 496.000 ;
+        RECT 8.540 4.300 491.540 495.700 ;
+        RECT 8.540 4.000 31.620 4.300 ;
+        RECT 32.780 4.000 93.780 4.300 ;
+        RECT 94.940 4.000 155.940 4.300 ;
+        RECT 157.100 4.000 218.100 4.300 ;
+        RECT 219.260 4.000 280.260 4.300 ;
+        RECT 281.420 4.000 342.420 4.300 ;
+        RECT 343.580 4.000 404.580 4.300 ;
+        RECT 405.740 4.000 466.740 4.300 ;
+        RECT 467.900 4.000 491.540 4.300 ;
+      LAYER Metal3 ;
+        RECT 4.000 437.660 496.000 482.300 ;
+        RECT 4.300 436.500 496.000 437.660 ;
+        RECT 4.000 375.500 496.000 436.500 ;
+        RECT 4.000 374.340 495.700 375.500 ;
+        RECT 4.000 312.780 496.000 374.340 ;
+        RECT 4.300 311.620 496.000 312.780 ;
+        RECT 4.000 187.900 496.000 311.620 ;
+        RECT 4.300 186.740 496.000 187.900 ;
+        RECT 4.000 125.740 496.000 186.740 ;
+        RECT 4.000 124.580 495.700 125.740 ;
+        RECT 4.000 63.020 496.000 124.580 ;
+        RECT 4.300 61.860 496.000 63.020 ;
+        RECT 4.000 13.580 496.000 61.860 ;
+      LAYER Metal4 ;
+        RECT 353.500 235.290 405.940 379.030 ;
+        RECT 408.140 235.290 471.380 379.030 ;
+  END
+END ram_16B
+END LIBRARY
+
